@@ -1,7 +1,7 @@
 import java.io.File;
 
 public class deleteOldFiles {
-public static void deleteFiles () {
+    public static void deleteFiles () {
 	//declare two folders where we will compare files to delete
 	File folder = new File("C:\\Users\\SotsenkoArtur\\updates\\victoriaXML\\");
 	File folder2 = new File("C:\\Users\\SotsenkoArtur\\updates\\testfolder\\");
