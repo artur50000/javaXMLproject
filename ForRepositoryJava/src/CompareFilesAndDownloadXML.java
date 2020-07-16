@@ -16,11 +16,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CompareFilesAndDownloadXML {
 
 	public static void compareFiles () throws FileNotFoundException, InterruptedException, AWTException  {
-	     //creating robot object
-		 Robot r = new Robot();
+	//creating robot object
+	Robot r = new Robot();
 		 
-		 //reading html file in string variable
-		 Scanner scanner = new Scanner( new File("C:\\Users\\SotsenkoArtur\\Downloads\\T24 Update Service.html") );
+	//reading html file in string variable
+	 Scanner scanner = new Scanner( new File("C:\\Users\\SotsenkoArtur\\Downloads\\T24 Update Service.html") );
          String text = scanner.useDelimiter("\\A").next();
          scanner.close(); 
          
@@ -129,7 +129,6 @@ public class CompareFilesAndDownloadXML {
 
          }
 
-	}
-
+     }
 }
 
