@@ -20,7 +20,7 @@ public class ReportExcel {
 
 	public static void xmlParsing() throws IOException {
 	
-    //building arraylists of xml tags content
+    	//building arraylists of xml tags content
 	ArrayList<String> update = new ArrayList<>();
 	ArrayList<String> symptom = new ArrayList<>();    
 	ArrayList<String> problem = new ArrayList<>();  
@@ -74,7 +74,7 @@ public class ReportExcel {
             listref2.add(subStr);
             //System.out.println(subStr);
             }
-            
+          
         }
         
         //tag symptom
@@ -93,8 +93,7 @@ public class ReportExcel {
   		 subStringArr = listref.get(i).substring(listref.get(i).indexOf("CreateDate=")+12, listref.get(i).indexOf("\" T"));
   	
   	       }
-  	  	
-        }
+  	   }
     
      //tag problem
         for (int i=0; i<listref.size();i++) {
@@ -104,8 +103,8 @@ public class ReportExcel {
 	  		
 	  		problem.add(subStr1);
 	  		
-	  	  	}
-	      }
+	  	 }
+	    }
   
          //tag natureoffix 
         for (int i=0; i<listref.size();i++) {
@@ -118,12 +117,11 @@ public class ReportExcel {
         		dataupdate.add(subStringArr);
 	  		
 	   	      }
-	  		
-	       	}
+	  	   }
 	      }
  	 
-		}
-	//printing the arraylists with tag content	 
+	}
+//printing the arraylists with tag content	 
  System.out.println(symptom);
  System.out.println(natureoffix);
  System.out.println(problem);
@@ -162,7 +160,5 @@ public class ReportExcel {
  out.close();
 workbook.close();
  
-
-	}
-
+    }
 }
