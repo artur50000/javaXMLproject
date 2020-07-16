@@ -16,36 +16,36 @@ public class GeneralClass {
 		 
 		 general.MethodName(downloadpage);
 		 
-         general.pressEnterKeyToContinue();
+                 general.pressEnterKeyToContinue();
 		 
 		 //compare links in html with links in previously saved file. Download files with new
-         //links
-         Class<CompareFilesAndDownloadXML> compareXML=CompareFilesAndDownloadXML.class;
+         	//links
+         	Class<CompareFilesAndDownloadXML> compareXML=CompareFilesAndDownloadXML.class;
          
-         CompareFilesAndDownloadXML.compareFiles();
+         	CompareFilesAndDownloadXML.compareFiles();
 		 
 		 general.MethodName(compareXML);
 		 
-         general.pressEnterKeyToContinue();
+         	general.pressEnterKeyToContinue();
          
-         //parse xml tags for data and fill cells in excel workbook with these data     
-         Class<ReportExcel> xmlparsing=ReportExcel.class;
+        	//parse xml tags for data and fill cells in excel workbook with these data     
+         	Class<ReportExcel> xmlparsing=ReportExcel.class;
          
-         ReportExcel.xmlParsing();
+         	ReportExcel.xmlParsing();
 		  
-		 general.MethodName(xmlparsing);
+		general.MethodName(xmlparsing);
 			 
-	     general.pressEnterKeyToContinue();
+	     	general.pressEnterKeyToContinue();
 	     
-         //compare new xml files with the old files where the filename differs with periodic 
+             //compare new xml files with the old files where the filename differs with periodic 
 	     //number and delete files with old numbers in the filename
-	     Class<deleteOldFiles> deletefiles = deleteOldFiles.class;
+	     	Class<deleteOldFiles> deletefiles = deleteOldFiles.class;
          
-         deleteOldFiles.deleteFiles();
+         	deleteOldFiles.deleteFiles();
 		  
-		 general.MethodName(deletefiles);
+		general.MethodName(deletefiles);
 			 
-	     general.pressEnterKeyToContinue();
+	     	general.pressEnterKeyToContinue();
 	
 	}
 	
@@ -68,8 +68,6 @@ public class GeneralClass {
 			String str=method.getName();
 			System.out.println("Method "+str+" was invoked");
 		}
-	
 		
 	}
-
 }
